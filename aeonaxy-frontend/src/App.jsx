@@ -10,7 +10,7 @@ function App() {
 
   useEffect(()=>{
     const userData = localStorage.getItem("userData");
-    if(!userData)
+    if(!userData || userData?.verified === false  )
       navigate("/sign-up");
   },[navigate]);
 
