@@ -1,4 +1,5 @@
-export const host = "http://localhost:9000";
+// export const host = "http://localhost:9000";
+export const host = "https://aeonaxy-fullstack.onrender.com";
 
 // user routes
 export const registerRouter = `${host}/users/create-account`;
