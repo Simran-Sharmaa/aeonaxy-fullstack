@@ -4,7 +4,7 @@ import {ApiError} from "../utils/apiError.js";
 import {apiResponse} from "../utils/apiResponse.js";
 import {uploadOnCloudinary} from "../utils/cloudinary.js";
 
-const profile = async(req,res)=>{
+const profile =  async(req,res)=>{
     try {
         const {location,recruiter,designer,insights} = req.body;
         const {userId}= req.params;
