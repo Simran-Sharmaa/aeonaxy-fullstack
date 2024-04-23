@@ -9,8 +9,8 @@ const app = express();
 app.use(cors());
 // express.json() middleware parses the JSON data and makes it available in req.body of your route handlers.
 app.use(express.json());
-// Middleware to parse URL-encoded bodies
 app.use(express.urlencoded({extended:true, limit:"16kb"}));
+// Middleware to parse URL-encoded bodies
 app.use(express.static("public"));
 app.use(cookieParser());
 
